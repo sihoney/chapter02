@@ -9,7 +9,14 @@ public class Song {
 	private String composer;
 	private int track;
 	
-	public Song() {}
+	public Song(String ti, String ar, String al, int y, String c, int tr) {
+		this.title = ti;
+		this.artist = ar;
+		this.album = al;
+		this.year = y;
+		this.composer = c;
+		this.track = tr;
+	}
 	
 	void setInfo(String ti, String ar, String al, int y, String c, int tr) {
 		this.title = ti;

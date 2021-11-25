@@ -3,10 +3,7 @@ package com.javaex.ex02;
 public class SongApp {
 	public static void main(String[] args) {
 		
-		Song s1 = new Song();
-		Song s2 = new Song();
-		
-		s1.setInfo(
+		Song s1 = new Song(
 				"Best Part", 
 				"Day6", 
 				"The Book Of Us: GRAVITY", 
@@ -14,8 +11,7 @@ public class SongApp {
 				"Matthew Burnett", 
 				6
 		);
-		
-		s2.setInfo(
+		Song s2 = new Song(
 				"좋은걸 뭐 어떡해", 
 				"Day6", 
 				"Every Day6 August", 
@@ -23,6 +19,24 @@ public class SongApp {
 				"Ji-Sang Hong", 
 				1
 		);
+		
+//		s1.setInfo(
+//				"Best Part", 
+//				"Day6", 
+//				"The Book Of Us: GRAVITY", 
+//				2019, 
+//				"Matthew Burnett", 
+//				6
+//		);
+		
+//		s2.setInfo(
+//				"좋은걸 뭐 어떡해", 
+//				"Day6", 
+//				"Every Day6 August", 
+//				2017, 
+//				"Ji-Sang Hong", 
+//				1
+//		);
 		
 		s1.showInfo(
 				s1.getInfo("artist"), 
